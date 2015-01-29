@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MichailSmith/jsUnitTestPresentationSamples",
   "dependencies": {
+    "backbone": "^1.1.2",
     "mocha": "^2.1.0",
     "should": "^4.6.2"
   }
