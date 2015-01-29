@@ -4,7 +4,7 @@ var should = require('should'),
 describe('simpleModel', function(){
     describe('with no parameters', function(){
         var model = new SimpleModel();
-        
+
         describe('url', function(){
            it('should return \'api/simple\'', function(){
                model.url().should.equal('api/simple');
