@@ -2,16 +2,21 @@ var should = require('should'),
     SimpleModel = require('./simpleModel');
 
 describe('simpleModel', function(){
-    describe('url', function(){
-        describe('with no parameters', function(){
+    describe('with no parameters', function(){
+        var model = new SimpleModel();
+        
+        describe('url', function(){
            it('should return \'api/simple\'', function(){
-                new SimpleModel().url().should.equal('api/simple');
+               model.url().should.equal('api/simple');
            });
         });
+    });
+    describe('with id parameter',function(){
+        var model = new SimpleModel({id:5});
 
-        describe('with id parameter',function(){
+        describe('url', function(){
             it('should return \'api/simple/:id\'', function(){
-                new SimpleModel({id:5}).url().should.equal('api/simple/5');
+                model.url().should.equal('api/simple/5');
             });
         });
     });
