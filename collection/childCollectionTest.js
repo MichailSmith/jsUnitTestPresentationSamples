@@ -2,8 +2,9 @@ var ChildCollection = require('./childCollection');
 
 require('should');
 
-describe('ChildCollection', function(){
+describe('ChildCollection with parentId', function(){
     var model = new ChildCollection({parentId:5});
+
     describe('parse', function(){
         it('returns response.data', function(){
             model.parse({data:'sample data'}).should.equal('sample data');
@@ -13,8 +14,9 @@ describe('ChildCollection', function(){
             model.totalCount.should.equal(5);
         });
     });
+
     describe('url', function(){
-        it('returns \'api/parent/:id/children\'', function(){
+        it('returns \'api/parent/:parentId/children\'', function(){
            model.url().should.equal('api/parent/5/children');
         });
     });
