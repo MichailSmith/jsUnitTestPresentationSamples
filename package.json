@@ -1,0 +1,23 @@
+{
+  "name": "jsUnitTestPresentationSamples",
+  "version": "1.0.0",
+  "description": "Samples for JS unit test presentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MichailSmith/jsUnitTestPresentationSamples.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MichailSmith/jsUnitTestPresentationSamples/issues"
+  },
+  "homepage": "https://github.com/MichailSmith/jsUnitTestPresentationSamples",
+  "dependencies": {
+    "mocha": "^2.1.0",
+    "should": "^4.6.2"
+  }
+}
