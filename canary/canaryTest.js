@@ -1,4 +1,3 @@
-require('should');
 var canarySystemUnderTest = require('./canarySystemUnderTest');
 
 describe('canary', function(){

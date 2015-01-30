@@ -1,5 +1,5 @@
-require('should');
-var ChildCollection = require('./childCollection');
+var should = require('should'),
+    ChildCollection = require('./childCollection');
 
 
 describe('ChildCollection with parentId', function(){

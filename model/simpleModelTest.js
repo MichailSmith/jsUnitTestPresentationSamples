@@ -1,5 +1,5 @@
-require('should');
-var SimpleModel = require('./simpleModel');
+var should = require('should'),
+    SimpleModel = require('./simpleModel');
 
 describe('simpleModel', function(){
     describe('with no parameters', function(){
