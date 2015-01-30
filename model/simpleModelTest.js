@@ -6,16 +6,16 @@ describe('simpleModel', function(){
         var model = new SimpleModel();
 
         describe('url', function(){
-           it('should return \'api/simple\'', function(){
+           it('should return "api/simple"', function(){
                model.url().should.equal('api/simple');
            });
         });
     });
     describe('with id parameter',function(){
-        var model = new SimpleModel({id:5});
+        var model = new SimpleModel({ id: 5 });
 
         describe('url', function(){
-            it('should return \'api/simple/:id\'', function(){
+            it('should return "api/simple/:id"', function(){
                 model.url().should.equal('api/simple/5');
             });
         });
@@ -33,7 +33,7 @@ describe('simpleModel', function(){
                 model.save();
                 errorCalledCount.should.equal(1);
             });
-            it('should raise appropriate \'invalid\' event', function(){
+            it('should raise appropriate "invalid" event', function(){
                 var model = new SimpleModel(),
                     errorParam = '';
 
@@ -43,7 +43,6 @@ describe('simpleModel', function(){
 
                 model.save();
                 errorParam.should.equal('requiredProperty is required');
-
             });
         });
     });

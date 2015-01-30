@@ -5,4 +5,4 @@ module.exports = function(date){
         return date;
     }
     return moment(date, 'M/D/YYYY HH:mm:ss').format('M/D/YYYY');
-}
+};
