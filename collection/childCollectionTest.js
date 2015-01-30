@@ -1,6 +1,6 @@
+require('should');
 var ChildCollection = require('./childCollection');
 
-require('should');
 
 describe('ChildCollection with parentId', function(){
     var model = new ChildCollection({parentId:5});
