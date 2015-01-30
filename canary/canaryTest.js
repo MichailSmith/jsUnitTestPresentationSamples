@@ -1,7 +1,7 @@
-var canarySystemUnderTest = require('./canarySystemUnderTest');
+var canary = require('./canary');
 
 describe('canary', function(){
     it('should be able to pass', function(){
-        canarySystemUnderTest.should.be.ok;
+        canary.should.be.ok;
     });
 });
